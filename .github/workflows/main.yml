@@ -36,8 +36,6 @@ jobs:
           la -a
           echo
           echo Is python installed?
-          python -version
+          python --version
           echo Is Git installed?
           git --version
-    
-          echo test, and deploy your project.
