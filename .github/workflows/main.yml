@@ -33,7 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: 
          echo 1. what is in this directory?
-         ls -a
+         ls
          echo
          echo is python installed?
          python -version
