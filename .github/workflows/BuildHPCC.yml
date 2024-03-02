@@ -1,0 +1,20 @@
+name: HPCC Systems Installation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hpcc-installation:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install HPCC Systems
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y hpccsystems-platform
+        # You might need additional steps based on your specific requirements
